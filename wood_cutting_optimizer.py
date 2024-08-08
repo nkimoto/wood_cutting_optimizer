@@ -64,7 +64,7 @@ def run_algorithm():
         counts = data["本数"].tolist()
 
         # ユーザーが入力した長材の長さを取得
-        max_length_str = max_length_entry.get()
+        max_length_str = max_length_entry.get().strip()
         if not max_length_str.isdigit():
             messagebox.showerror("エラー", "有効な長材の長さを入力してください（整数）")
             return
