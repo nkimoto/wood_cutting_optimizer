@@ -161,8 +161,6 @@ open_button = tk.Button(
     file_frame,
     text="ファイルを開く",
     font=FONT,
-    bg=BUTTON_COLOR,
-    fg=BUTTON_TEXT_COLOR,
     command=open_file,
 )
 open_button.pack(side="left", padx=(0, 10))
@@ -177,8 +175,6 @@ run_button = tk.Button(
     frame,
     text="実行",
     font=FONT,
-    bg=BUTTON_COLOR,
-    fg=BUTTON_TEXT_COLOR,
     command=run_algorithm,
 )
 run_button.grid(row=3, column=0, columnspan=3, pady=10)
